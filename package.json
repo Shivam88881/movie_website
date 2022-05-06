@@ -1,5 +1,6 @@
 {
   "name": "movies",
+  "homepage": "https://Shivam88881.github.io/movie_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "gh-pages": "^3.2.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^5.3.1",

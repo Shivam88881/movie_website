@@ -10,8 +10,8 @@ function App() {
     <Router>
       <Navbar/>
       <Switch>
-        <Route exact  path='/' component={Movies}/>
-        <Route path='/favourites' component={Favroite} />
+        <Route exact  path='/movie_website' component={Movies}/>
+        <Route path='/movie_website/favourites' component={Favroite} />
       </Switch>
       {/* <Banner/> */}
       {/* <Movies/> name="udai" */}
