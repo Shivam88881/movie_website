@@ -23,9 +23,6 @@ constructor(){
     return (
       <div>
         <>
-          <div style={{display:'flex',justifyContent:'center'}}>
-            <h2>Your Favriotes</h2>
-          </div>
           <div className='main'>
             <div className='row'>
               <div className='col-3 favroite-genre-list'>

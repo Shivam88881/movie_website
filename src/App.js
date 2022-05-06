@@ -10,12 +10,15 @@ function App() {
     <Router>
       <Navbar/>
       <Switch>
-        <Route exact  path='/movie_website' component={Movies}/>
+        <Route path='/movie_website' exact render={()=>(
+          <>
+            <Banner/> 
+            <Movies/>
+          </>
+      )}/>
         <Route path='/movie_website/favourites' component={Favroite} />
       </Switch>
-      {/* <Banner/> */}
-      {/* <Movies/> name="udai" */}
-      {/* <Favourite/> */}
+      
     </Router>
 
   );
