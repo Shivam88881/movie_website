@@ -62,7 +62,7 @@
   left: 5vh;
   overflow: hidden;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   .banner-card{
     height: 30vh;
   }
@@ -107,7 +107,7 @@
   height: 40vh;
   width: 22vw;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .movie-card{
     margin: 0.1rem;
     width: 48vw;
@@ -130,7 +130,7 @@
     height: 35vh;
   }
 }
-@media screen and (min-width:401px) and (max-width: 1080px) {
+@media screen and (min-width:601px) and (max-width: 1080px) {
   .banner-card{
     height: 40vh;
   }
