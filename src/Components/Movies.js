@@ -59,7 +59,7 @@ handleFavourites=(movieobj)=>{
   else{
     old_data.push(movieobj)
   }
-  console.log(old_data)
+  // console.log(old_data)
   localStorage.setItem("movies",JSON.stringify(old_data))
   this.handleFavouritesState();
 }
@@ -86,13 +86,14 @@ handleFavouritesState=()=>{
  }
   render() {
     return (
-      <>
+      < >
+      <div>
       {
         this.state.movies.length==0 ? <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
       </div> :
       <div>
-        <h2 className='text-center'> Trendings</h2>
+        <div style={{background:'#deb368',height:'2.8rem',color:'#610b25'}}><h2 className='text-center'> Trendings</h2></div>
         <div className='movies-list' >
           {
             this.state.movies.map((movieobj)=>(
@@ -101,11 +102,9 @@ handleFavouritesState=()=>{
                <h5 className="card-title movie-title">{movieobj.original_title}</h5>
                <div className='button-wrapper' style={{display:'flex',width:'100%',justifyContent:'center'}}>
                  {
-                   this.state.hover==movieobj.id ?
-                   <>
+                   this.state.hover==movieobj.id && <>
                    {this.state.favourites.includes(movieobj.id)?<button type="button" class="btn btn-danger movie-button" onClick={()=>this.handleFavourites(movieobj)}>Remove From favourite</button>:<a class="btn btn-primary movie-button" onClick={()=>this.handleFavourites(movieobj)}>Add to Favourite</a> }
                    </>
-                   :<div> </div>
                  }
                
                  </div>
@@ -128,6 +127,7 @@ handleFavouritesState=()=>{
                         </div>
         </div>
       }
+      </div>
       </>
     )
   }

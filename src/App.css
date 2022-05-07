@@ -36,21 +36,27 @@
     transform: rotate(360deg);
   }
 }
-.navbar{
+.root-page{
+  background-color: #282c34;
+  color: blue;
+  height: 100%;
+}
+
+.navigation{
   display: flex;
-  justify-content: center;
+  height: 3rem;
+  align-items: center;
 }
 .banner-card{
-  margin-top: 1rem;
-  width: 99vw;
-  height: 60vh;
+  width: 100vw;
+  height: 70vh;
   position: relative;
   color: rgb(243, 176, 176);
   overflow: hidden;
 }
 .banner-img{
-  width: 99vw;
-  height: 60vh;
+  width: 100vw;
+  height: 70vh;
 }
 .banner-title{
   position: absolute;
@@ -90,10 +96,11 @@
 }
 .movie-card{
   margin: 1rem;
-  width: 22vw;
-  height: 40vh;
+  width: 19vw;
+  height: 55vh;
   position: relative;
   color: white;
+  border-radius: 12px;
 }
 .movie-title{
   position: absolute;
@@ -105,8 +112,9 @@
   bottom: 1rem;
 }
 .movie-img{
-  height: 40vh;
-  width: 22vw;
+  height: 55vh;
+  width: 19vw;
+  border-radius: 12px;
 }
 @media screen and (max-width: 600px) {
   .movie-card{
@@ -115,6 +123,7 @@
     height: 35vh;
     position: relative;
     color: white;
+    border-radius: 7px;
   }
   .movie-title{
     position: absolute;
@@ -129,6 +138,7 @@
   .movie-img{
     width: 48vw;
     height: 35vh;
+    border-radius: 7px;
   }
 }
 @media screen and (min-width:601px) and (max-width: 1080px) {

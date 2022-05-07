@@ -8,16 +8,18 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
+      <div className='root-page'>
       <Navbar/>
       <Switch>
         <Route path='/movie_website' exact render={()=>(
           <>
             <Banner/> 
-            <Movies/>
+            <Movies />
           </>
-      )}/>
+      )} />
         <Route path='/movie_website/favourites' component={Favroite} />
       </Switch>
+      </div>
       
     </Router>
 
