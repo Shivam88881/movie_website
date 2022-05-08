@@ -19,6 +19,7 @@ export default class Movies extends Component {
     this.setState({
         movies:[...data.results]
     })
+    this.handleFavouritesState();
 }
 changeMovies=async()=>{
     const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=5540e483a20e0b20354dabc2d66a31c9&language=en-US&page=${this.state.currPage}`);
